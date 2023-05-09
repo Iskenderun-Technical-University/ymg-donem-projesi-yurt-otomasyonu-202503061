@@ -1,0 +1,1 @@
+Merhaba ben Gökhan sizlere projemden bahsedeyim. Veritabanına bağlı bir yurt otomasyon projesi yapılıcaktır. Otomasyon içeriği Öğrenci kayıt, personel kayıt, gelir-gider tabloları vb. formlar olucaktır.
