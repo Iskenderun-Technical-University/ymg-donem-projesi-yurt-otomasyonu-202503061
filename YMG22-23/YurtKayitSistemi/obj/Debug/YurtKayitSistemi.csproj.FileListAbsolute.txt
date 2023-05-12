@@ -11,7 +11,6 @@ C:\Users\ZEGO\Desktop\YMG22-23\YurtKayitSistemi\obj\Debug\YurtKayitSistemi.pdb
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtKayitSistemi\bin\Debug\YurtKayitSistemi.exe.config
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtKayitSistemi\bin\Debug\YurtKayitSistemi.exe
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtKayitSistemi\bin\Debug\YurtKayitSistemi.pdb
-C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtKayitSistemi\obj\Debug\YurtKayitSistemi.csproj.AssemblyReference.cache
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtKayitSistemi\obj\Debug\YurtKayitSistemi.Properties.Resources.resources
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtKayitSistemi\obj\Debug\YurtKayitSistemi.csproj.GenerateResource.cache
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtKayitSistemi\obj\Debug\YurtKayitSistemi.csproj.CoreCompileInputs.cache

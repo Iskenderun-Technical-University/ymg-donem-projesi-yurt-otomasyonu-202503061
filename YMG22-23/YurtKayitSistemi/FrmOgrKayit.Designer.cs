@@ -73,6 +73,7 @@ namespace YurtKayitSistemi
             this.TxtOgrAd.Name = "TxtOgrAd";
             this.TxtOgrAd.Size = new System.Drawing.Size(273, 26);
             this.TxtOgrAd.TabIndex = 1;
+            this.TxtOgrAd.TextChanged += new System.EventHandler(this.TxtOgrAd_TextChanged);
             // 
             // textBox1
             // 
@@ -322,6 +323,7 @@ namespace YurtKayitSistemi
             this.Controls.Add(this.label1);
             this.Name = "FrmOgrKayit";
             this.Text = "Öğrenci Kayıt";
+            this.Load += new System.EventHandler(this.FrmOgrKayit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
