@@ -45,6 +45,7 @@ namespace YurtKayitSistemi
                 CmbOdaNo.Items.Add(oku2[0].ToString());
             }
             baglanti.Close();
+            // dolu odalari l'steleme
 
         }
     }
