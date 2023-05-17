@@ -46,6 +46,16 @@ namespace YurtKayitSistemi
             }
             baglanti.Close();
             // dolu odalari l'steleme
+            
+            baglanti.Open();
+            SqlCommand komut2 = new SqlCommand(("Select Odano From Odalar where Odakapasite != OdaAktif baglanti);
+            Sq1DataReader oku2: = komut2.ExecuteReader();
+            while (oku2.Read())
+            {
+                CmbOdaNo.Items.Add(oku2[@].ToString());
+            }
+            baglanti.Close();
+
 
         }
     }
