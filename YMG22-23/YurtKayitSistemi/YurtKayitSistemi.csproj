@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmOgrKayit.cs">
+    <Compile Include="FrmOgr.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmOgrKayit.Designer.cs">
-      <DependentUpon>FrmOgrKayit.cs</DependentUpon>
+    <Compile Include="FrmOgr.Designer.cs">
+      <DependentUpon>FrmOgr.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,8 +59,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtKayitDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FrmOgrKayit.resx">
-      <DependentUpon>FrmOgrKayit.cs</DependentUpon>
+    <EmbeddedResource Include="FrmOgr.resx">
+      <DependentUpon>FrmOgr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
