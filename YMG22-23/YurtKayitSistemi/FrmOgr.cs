@@ -23,36 +23,33 @@ namespace YurtKayitSistemi
             // Data Source=DESKTOP-LJ30V5U\SQLEXPRESS;Initial Catalog=YurtKayit;Integrated Security=True
             SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-LJ30V5U\\SQLEXPRESS;Initial Catalog=YurtKayit;Integrated Security=True");
 
-            private void TxtOgrAd_TextChanged(object sender, EventArgs e)
+
+
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("Select BolumAd From Bolumler", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
             {
-
+                CmbBolum.Items.Add(oku[0].ToString());
             }
+            baglanti.Close();
 
-            private void FrmOgr_Load(object sender, EventArgs e)
+            //Bos Odalari Listeleme Komutlari
+            baglanti.Open();
+            SqlCommand komut2 = new SqlCommand("Select OdaNo From Odalar where OdaKapasite != OdaAktif", baglanti);
+            SqlDataReader oku2 = komut2.ExecuteReader();
+            while (oku2.Read())
             {
-                baglanti.Open();
-                SqlCommand komut = new SqlCommand("Select BolumAd From Bolumler", baglanti);
-                SqlDataReader oku = komut.ExecuteReader();
-                while (oku.Read())
-                {
-                    CmbBolum.Items.Add(oku[0].ToString());
-                }
-                baglanti.Close();
-
-                //Bos Odalari Listeleme Komutlari
-                baglanti.Open();
-                SqlCommand komut2 = new SqlCommand("Select OdaNo From Odalar where OdaKapasite != OdaAktif", baglanti);
-                SqlDataReader oku2 = komut2.ExecuteReader();
-                while (oku2.Read())
-                {
-                    CmbOdaNo.Items.Add(oku2[0].ToString());
-                }
-                baglanti.Close();
-               
+                CmbOdaNo.Items.Add(oku2[0].ToString());
             }
+            baglanti.Close();
+            // ver' ekle 
+            // veri cek
+            // tasarim not eta
         }
 
-        private static FrmOgr ()
+        
+        private void TxtOgrAd_TextChanged(object sender, EventArgs e)
         {
 
         }

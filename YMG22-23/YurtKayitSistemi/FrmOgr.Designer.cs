@@ -279,6 +279,7 @@ namespace YurtKayitSistemi
             this.TxtOgrAd.Name = "TxtOgrAd";
             this.TxtOgrAd.Size = new System.Drawing.Size(273, 26);
             this.TxtOgrAd.TabIndex = 24;
+            this.TxtOgrAd.TextChanged += new System.EventHandler(this.TxtOgrAd_TextChanged);
             // 
             // label1
             // 
@@ -291,7 +292,7 @@ namespace YurtKayitSistemi
             this.label1.TabIndex = 23;
             this.label1.Text = "Öğrenci Ad:";
             // 
-            // Form1
+            // FrmOgr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -319,7 +320,7 @@ namespace YurtKayitSistemi
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtOgrAd);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "FrmOgr";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
