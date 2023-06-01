@@ -22,10 +22,6 @@ namespace YurtKayitSistemi
         {
             // Data Source=DESKTOP-LJ30V5U\SQLEXPRESS;Initial Catalog=YurtKayit;Integrated Security=True
             SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-LJ30V5U\\SQLEXPRESS;Initial Catalog=YurtKayit;Integrated Security=True");
-            public FrmOgrKayit()
-            {
-
-            }
 
             private void TxtOgrAd_TextChanged(object sender, EventArgs e)
             {
@@ -52,8 +48,13 @@ namespace YurtKayitSistemi
                     CmbOdaNo.Items.Add(oku2[0].ToString());
                 }
                 baglanti.Close();
-                // dolu odalari l'steleme
+               
             }
+        }
+
+        private static FrmOgr ()
+        {
+
         }
     }
 }
