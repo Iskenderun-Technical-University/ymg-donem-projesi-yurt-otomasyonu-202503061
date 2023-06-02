@@ -37,6 +37,15 @@ namespace YurtOt
                 CmbBolum.Items.Add(oku[0].ToString());
             }
             baglanti.Close();
+            //bos odalari goruntuleme 
+            baglanti.Open();
+            SqlCommand komut2 = new SqlCommand("Select Odano From Odalar where OdaKapasite != OdaAktif ", baglanti);
+            SqlDataReader oku2 = komut2.ExecuteReader();
+            while(oku2.Read())
+            {
+                CmbOdaNo.Items.Add(oku2[0].ToString());
+            }
+            baglanti.Close();
         }
     }
 }
