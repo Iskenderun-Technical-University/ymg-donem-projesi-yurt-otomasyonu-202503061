@@ -303,6 +303,7 @@ namespace YurtOt
             this.Controls.Add(this.label1);
             this.Name = "FormOgrKayit";
             this.Text = "Öğrenci Kayıt";
+            this.Load += new System.EventHandler(this.FormOgrKayit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
