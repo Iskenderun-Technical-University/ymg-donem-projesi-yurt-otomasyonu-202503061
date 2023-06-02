@@ -1,0 +1,10 @@
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\bin\Debug\YurtOt.exe.config
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\bin\Debug\YurtOt.exe
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\bin\Debug\YurtOt.pdb
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.csproj.AssemblyReference.cache
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.FormOgrKayit.resources
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.Properties.Resources.resources
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.csproj.GenerateResource.cache
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.csproj.CoreCompileInputs.cache
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.exe
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.pdb
