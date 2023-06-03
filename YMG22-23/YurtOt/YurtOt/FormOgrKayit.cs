@@ -46,6 +46,7 @@ namespace YurtOt
                 CmbOdaNo.Items.Add(oku2[0].ToString());
             }
             baglanti.Close();
+            // öğrenci panle formu oluşturulması
         }
     }
 }
