@@ -51,22 +51,31 @@ namespace YurtOt
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
-            // kaydet butonu komutlari
-            baglanti.Open();
-            SqlCommand komutkayit = new SqlCommand("insert into Ogrenci(OgrAd,OgrSoyad,OgrTC,OgrTelefon,OgrDogum,OgrBolum,OgrMail,OgrOdaNo,OgrVeliAdSoyad,OgrVeliTelefon,OgrVeliAdres) values (@ad,@soyad,@tc,@telefon,@dogum,@bolum,@mail,@no,@veliadsoyad,@velitelefon,@veliadres)",baglanti);
-            komutkayit.Parameters.AddWithValue("@ad", TxtOgrAd.Text);
-            komutkayit.Parameters.AddWithValue("@soyad", TxtOgrSoyad.Text);
-            komutkayit.Parameters.AddWithValue("@tc", MskTC.Text);
-            komutkayit.Parameters.AddWithValue("@telefon", MskOgrTelefon.Text);
-            komutkayit.Parameters.AddWithValue("@dogum", MskDogum.Text);
-            komutkayit.Parameters.AddWithValue("@bolum", CmbBolum.Text);
-            komutkayit.Parameters.AddWithValue("@mail", TxtMail.Text);
-            komutkayit.Parameters.AddWithValue("@no", CmbOdaNo.Text);
-            komutkayit.Parameters.AddWithValue("@veliadsoyad", TxtVeliAdSoyad.Text);
-            komutkayit.Parameters.AddWithValue("@velitelefon", MskVeliTelefon.Text);
-            komutkayit.Parameters.AddWithValue("@veliadres", RchAdres.Text);
-            komutkayit.ExecuteNonQuery();
-            baglanti.Close();
+            try
+            {
+                // kaydet butonu komutlari
+                baglanti.Open();
+                SqlCommand komutkayit = new SqlCommand("insert into Ogrenci(OgrAd,OgrSoyad,OgrTC,OgrTelefon,OgrDogum,OgrBolum,OgrMail,OgrOdaNo,OgrVeliAdSoyad,OgrVeliTelefon,OgrVeliAdres) values (@ad,@soyad,@tc,@telefon,@dogum,@bolum,@mail,@no,@veliadsoyad,@velitelefon,@veliadres)", baglanti);
+                komutkayit.Parameters.AddWithValue("@ad", TxtOgrAd.Text);
+                komutkayit.Parameters.AddWithValue("@soyad", TxtOgrSoyad.Text);
+                komutkayit.Parameters.AddWithValue("@tc", MskTC.Text);
+                komutkayit.Parameters.AddWithValue("@telefon", MskOgrTelefon.Text);
+                komutkayit.Parameters.AddWithValue("@dogum", MskDogum.Text);
+                komutkayit.Parameters.AddWithValue("@bolum", CmbBolum.Text);
+                komutkayit.Parameters.AddWithValue("@mail", TxtMail.Text);
+                komutkayit.Parameters.AddWithValue("@no", CmbOdaNo.Text);
+                komutkayit.Parameters.AddWithValue("@veliadsoyad", TxtVeliAdSoyad.Text);
+                komutkayit.Parameters.AddWithValue("@velitelefon", MskVeliTelefon.Text);
+                komutkayit.Parameters.AddWithValue("@veliadres", RchAdres.Text);
+                komutkayit.ExecuteNonQuery();
+                baglanti.Close();
+                MessageBox.Show("Kayit basarili bir sekilde eklenmistir bilginize :)");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("UYARI!!! Kayit basarili bir sekilde eklenememistir bilginize :(");
+            }
 
         }
     }

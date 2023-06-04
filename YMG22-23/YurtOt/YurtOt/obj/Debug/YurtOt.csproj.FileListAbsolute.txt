@@ -8,3 +8,4 @@ C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtO
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.csproj.CoreCompileInputs.cache
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.exe
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.pdb
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.FrmBolumler.resources
