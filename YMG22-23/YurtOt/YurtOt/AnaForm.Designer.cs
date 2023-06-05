@@ -424,10 +424,10 @@ namespace YurtOt
         private System.Windows.Forms.ToolStripMenuItem paintToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
     
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogridDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrAdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrSoyadDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ogrOdaNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OgridDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OgrAdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OgrSoyadDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn OgrOdaNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;

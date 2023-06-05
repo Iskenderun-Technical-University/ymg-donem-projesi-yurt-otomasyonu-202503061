@@ -53,7 +53,7 @@ namespace YurtOt
             try
             {
                 // ogrenciyi kaydetme
-                SqlCommand komutkayit = new SqlCommand("insert into Ogrenci(OgrAd,OgrSoyad,OgrTC,OgrTelefon,OgrDogum,OgrBolum,OgrMail,OgrOdaNo,OgrVeliAdSoyad,OgrVeliTelefon,OgrVeliAdres) values (@ad,@soyad,@tc,@telefon,@dogum,@bolum,@mail,@no,@veliadsoyad,@velitelefon,@veliadres)", bgl.baglanti());
+                SqlCommand komutkayit = new SqlCommand("insert into Ogrenci (OgrAd,OgrSoyad,OgrTC,OgrTelefon,OgrDogum,OgrBolum,OgrMail,OgrOdaNo,OgrVeliAdSoyad,OgrVeliTelefon,OgrVeliAdres) values (@ad,@soyad,@tc,@telefon,@dogum,@bolum,@mail,@no,@veliadsoyad,@velitelefon,@veliadres)", bgl.baglanti());
                 komutkayit.Parameters.AddWithValue("@ad", TxtOgrAd.Text);
                 komutkayit.Parameters.AddWithValue("@soyad", TxtOgrSoyad.Text);
                 komutkayit.Parameters.AddWithValue("@tc", MskTC.Text);
@@ -90,7 +90,7 @@ namespace YurtOt
             catch (Exception)
             {
 
-                MessageBox.Show("UYARI!!! Kayit basarili bir sekilde eklenememistir bilginize :(");
+                // MessageBox.Show("UYARI!!! Kayit basarili bir sekilde eklenememistir bilginize :(");
             }
 
             SqlCommand emiroda = new SqlCommand("update Odalar set OdaAktif = OdaAktif + 1 where OdaNo = @c1", bgl.baglanti());
