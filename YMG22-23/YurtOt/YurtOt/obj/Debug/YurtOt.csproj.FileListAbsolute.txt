@@ -13,3 +13,6 @@ C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtO
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.FormOdeme.resources
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.OgrenciListe.resources
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.OgrenciDuzunle.resources
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.GiderFormu.resources
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.GiderList.resources
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.GiderGuncelleme.resources

@@ -70,6 +70,24 @@
     <Compile Include="FrmBolumler.Designer.cs">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiderFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiderFormu.Designer.cs">
+      <DependentUpon>GiderFormu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiderGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiderGuncelleme.Designer.cs">
+      <DependentUpon>GiderGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiderList.Designer.cs">
+      <DependentUpon>GiderList.cs</DependentUpon>
+    </Compile>
     <Compile Include="OgrenciDuzunle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +123,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtKayitDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="YurtKayitDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +139,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiderFormu.resx">
+      <DependentUpon>GiderFormu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiderGuncelleme.resx">
+      <DependentUpon>GiderGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiderList.resx">
+      <DependentUpon>GiderList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OgrenciDuzunle.resx">
       <DependentUpon>OgrenciDuzunle.cs</DependentUpon>
@@ -184,6 +216,17 @@
     </None>
     <None Include="YurtKayitDataSet3.xss">
       <DependentUpon>YurtKayitDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet4.xsc">
+      <DependentUpon>YurtKayitDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet4.xss">
+      <DependentUpon>YurtKayitDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
