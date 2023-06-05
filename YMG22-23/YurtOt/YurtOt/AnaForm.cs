@@ -58,8 +58,8 @@ namespace YurtOt
 
         private void öğrenciGüncelleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OgrenciDuzunle od = new OgrenciDuzunle();
-            od.Show();
+            OgrenciListe ol = new OgrenciListe();
+            ol.Show();
         }
 
         private void bölümEkleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -108,6 +108,11 @@ namespace YurtOt
         {
             PersonelFormu pf = new PersonelFormu();
             pf.Show();
+        }
+
+        private void çıkışToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -40,6 +40,7 @@ namespace YurtOt
                 CmbAy.Items.Add(oku2[0].ToString());
             }
             bgl.baglanti().Close();
+
         }
 
         private void CmbAy_SelectedIndexChanged(object sender, EventArgs e)
@@ -53,5 +54,7 @@ namespace YurtOt
             }
             bgl.baglanti().Close();
         }
+
+        
     }
 }

@@ -55,6 +55,7 @@ namespace YurtOt
             this.TxtOgrAd = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.TxtOgrid = new System.Windows.Forms.TextBox();
+            this.BtnSil = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -80,7 +81,7 @@ namespace YurtOt
             // BtnGuncelle
             // 
             this.BtnGuncelle.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnGuncelle.Location = new System.Drawing.Point(278, 623);
+            this.BtnGuncelle.Location = new System.Drawing.Point(195, 623);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(127, 42);
             this.BtnGuncelle.TabIndex = 46;
@@ -305,12 +306,24 @@ namespace YurtOt
             this.TxtOgrid.Size = new System.Drawing.Size(309, 23);
             this.TxtOgrid.TabIndex = 48;
             // 
+            // BtnSil
+            // 
+            this.BtnSil.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnSil.Location = new System.Drawing.Point(375, 623);
+            this.BtnSil.Name = "BtnSil";
+            this.BtnSil.Size = new System.Drawing.Size(127, 42);
+            this.BtnSil.TabIndex = 49;
+            this.BtnSil.Text = "Sil";
+            this.BtnSil.UseVisualStyleBackColor = true;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
+            // 
             // OgrenciDuzunle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(800, 673);
+            this.ClientSize = new System.Drawing.Size(541, 673);
+            this.Controls.Add(this.BtnSil);
             this.Controls.Add(this.TxtOgrid);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.BtnGuncelle);
@@ -375,5 +388,6 @@ namespace YurtOt
         private System.Windows.Forms.TextBox TxtOgrAd;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox TxtOgrid;
+        private System.Windows.Forms.Button BtnSil;
     }
 }

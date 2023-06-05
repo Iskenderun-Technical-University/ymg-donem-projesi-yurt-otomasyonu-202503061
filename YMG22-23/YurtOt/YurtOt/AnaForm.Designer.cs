@@ -57,7 +57,6 @@ namespace YurtOt
             this.erişimKolaylığıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hesapMakinesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.hakkımızdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -135,22 +134,22 @@ namespace YurtOt
             // öğrenciEkleToolStripMenuItem1
             // 
             this.öğrenciEkleToolStripMenuItem1.Name = "öğrenciEkleToolStripMenuItem1";
-            this.öğrenciEkleToolStripMenuItem1.Size = new System.Drawing.Size(191, 22);
+            this.öğrenciEkleToolStripMenuItem1.Size = new System.Drawing.Size(181, 22);
             this.öğrenciEkleToolStripMenuItem1.Text = "Öğrenci Ekle";
             this.öğrenciEkleToolStripMenuItem1.Click += new System.EventHandler(this.öğrenciEkleToolStripMenuItem1_Click);
             // 
             // öğrenciListesiToolStripMenuItem1
             // 
             this.öğrenciListesiToolStripMenuItem1.Name = "öğrenciListesiToolStripMenuItem1";
-            this.öğrenciListesiToolStripMenuItem1.Size = new System.Drawing.Size(191, 22);
+            this.öğrenciListesiToolStripMenuItem1.Size = new System.Drawing.Size(181, 22);
             this.öğrenciListesiToolStripMenuItem1.Text = "Öğrenci Listesi";
             this.öğrenciListesiToolStripMenuItem1.Click += new System.EventHandler(this.öğrenciListesiToolStripMenuItem1_Click);
             // 
             // öğrenciGüncelleToolStripMenuItem
             // 
             this.öğrenciGüncelleToolStripMenuItem.Name = "öğrenciGüncelleToolStripMenuItem";
-            this.öğrenciGüncelleToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.öğrenciGüncelleToolStripMenuItem.Text = "Öğrenci Düzenle";
+            this.öğrenciGüncelleToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.öğrenciGüncelleToolStripMenuItem.Text = "Öğrenci Sil";
             this.öğrenciGüncelleToolStripMenuItem.Click += new System.EventHandler(this.öğrenciGüncelleToolStripMenuItem_Click);
             // 
             // bölümlerToolStripMenuItem
@@ -187,7 +186,7 @@ namespace YurtOt
             // öğrenciToolStripMenuItem
             // 
             this.öğrenciToolStripMenuItem.Name = "öğrenciToolStripMenuItem";
-            this.öğrenciToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.öğrenciToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.öğrenciToolStripMenuItem.Text = "Ödeme Al";
             this.öğrenciToolStripMenuItem.Click += new System.EventHandler(this.öğrenciToolStripMenuItem_Click);
             // 
@@ -203,14 +202,14 @@ namespace YurtOt
             // giderEkleToolStripMenuItem
             // 
             this.giderEkleToolStripMenuItem.Name = "giderEkleToolStripMenuItem";
-            this.giderEkleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.giderEkleToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.giderEkleToolStripMenuItem.Text = "Gider Ekle";
             this.giderEkleToolStripMenuItem.Click += new System.EventHandler(this.giderEkleToolStripMenuItem_Click);
             // 
             // giderİstatisToolStripMenuItem
             // 
             this.giderİstatisToolStripMenuItem.Name = "giderİstatisToolStripMenuItem";
-            this.giderİstatisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.giderİstatisToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.giderİstatisToolStripMenuItem.Text = "Gider Listesi";
             this.giderİstatisToolStripMenuItem.Click += new System.EventHandler(this.giderİstatisToolStripMenuItem_Click);
             // 
@@ -264,7 +263,6 @@ namespace YurtOt
             this.erişimKolaylığıToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hesapMakinesiToolStripMenuItem,
             this.paintToolStripMenuItem,
-            this.hakkımızdaToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.erişimKolaylığıToolStripMenuItem.Name = "erişimKolaylığıToolStripMenuItem";
             this.erişimKolaylığıToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
@@ -284,17 +282,12 @@ namespace YurtOt
             this.paintToolStripMenuItem.Text = "Paint";
             this.paintToolStripMenuItem.Click += new System.EventHandler(this.paintToolStripMenuItem_Click);
             // 
-            // hakkımızdaToolStripMenuItem
-            // 
-            this.hakkımızdaToolStripMenuItem.Name = "hakkımızdaToolStripMenuItem";
-            this.hakkımızdaToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.hakkımızdaToolStripMenuItem.Text = "Hakkımızda";
-            // 
             // çıkışToolStripMenuItem
             // 
             this.çıkışToolStripMenuItem.Name = "çıkışToolStripMenuItem";
             this.çıkışToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.çıkışToolStripMenuItem.Text = "Çıkış";
+            this.çıkışToolStripMenuItem.Click += new System.EventHandler(this.çıkışToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -429,7 +422,6 @@ namespace YurtOt
         private System.Windows.Forms.ToolStripMenuItem erişimKolaylığıToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hesapMakinesiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paintToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem hakkımızdaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
     
         private System.Windows.Forms.DataGridViewTextBoxColumn ogridDataGridViewTextBoxColumn;

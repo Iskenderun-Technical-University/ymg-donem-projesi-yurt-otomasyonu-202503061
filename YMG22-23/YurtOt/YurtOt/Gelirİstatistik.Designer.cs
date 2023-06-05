@@ -29,24 +29,19 @@ namespace YurtOt
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.LblPara = new System.Windows.Forms.Label();
             this.CmbAy = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.labelAyKazanc = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(349, 67);
+            this.label1.Location = new System.Drawing.Point(256, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 20);
             this.label1.TabIndex = 0;
@@ -56,7 +51,7 @@ namespace YurtOt
             // 
             this.LblPara.AutoSize = true;
             this.LblPara.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblPara.Location = new System.Drawing.Point(484, 67);
+            this.LblPara.Location = new System.Drawing.Point(391, 46);
             this.LblPara.Name = "LblPara";
             this.LblPara.Size = new System.Drawing.Size(19, 20);
             this.LblPara.TabIndex = 1;
@@ -66,7 +61,7 @@ namespace YurtOt
             // 
             this.CmbAy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbAy.FormattingEnabled = true;
-            this.CmbAy.Location = new System.Drawing.Point(264, 126);
+            this.CmbAy.Location = new System.Drawing.Point(171, 105);
             this.CmbAy.Name = "CmbAy";
             this.CmbAy.Size = new System.Drawing.Size(214, 26);
             this.CmbAy.TabIndex = 2;
@@ -76,7 +71,7 @@ namespace YurtOt
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(174, 128);
+            this.label2.Location = new System.Drawing.Point(81, 107);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 20);
             this.label2.TabIndex = 3;
@@ -86,7 +81,7 @@ namespace YurtOt
             // 
             this.labelAyKazanc.AutoSize = true;
             this.labelAyKazanc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelAyKazanc.Location = new System.Drawing.Point(277, 67);
+            this.labelAyKazanc.Location = new System.Drawing.Point(184, 46);
             this.labelAyKazanc.Name = "labelAyKazanc";
             this.labelAyKazanc.Size = new System.Drawing.Size(19, 20);
             this.labelAyKazanc.TabIndex = 5;
@@ -96,35 +91,18 @@ namespace YurtOt
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(173, 67);
+            this.label4.Location = new System.Drawing.Point(80, 46);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "Secilen Ay:";
-            // 
-            // chart1
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(12, 167);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(643, 271);
-            this.chart1.TabIndex = 6;
-            this.chart1.Text = "chart1";
             // 
             // Gelirİstatistik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(667, 450);
-            this.Controls.Add(this.chart1);
+            this.ClientSize = new System.Drawing.Size(502, 149);
             this.Controls.Add(this.labelAyKazanc);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -136,7 +114,6 @@ namespace YurtOt
             this.Name = "Gelirİstatistik";
             this.Text = "Gelir İstatistik";
             this.Load += new System.EventHandler(this.Gelirİstatistik_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,6 +127,5 @@ namespace YurtOt
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelAyKazanc;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

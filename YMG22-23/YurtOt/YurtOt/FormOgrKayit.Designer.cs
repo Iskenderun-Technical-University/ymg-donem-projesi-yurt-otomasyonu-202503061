@@ -268,7 +268,7 @@ namespace YurtOt
             // BtnKaydet
             // 
             this.BtnKaydet.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnKaydet.Location = new System.Drawing.Point(262, 620);
+            this.BtnKaydet.Location = new System.Drawing.Point(198, 610);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(127, 42);
             this.BtnKaydet.TabIndex = 22;
@@ -290,7 +290,7 @@ namespace YurtOt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1051, 713);
+            this.ClientSize = new System.Drawing.Size(516, 713);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.BtnKaydet);
             this.Controls.Add(this.label11);

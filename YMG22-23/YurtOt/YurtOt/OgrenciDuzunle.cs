@@ -18,7 +18,27 @@ namespace YurtOt
             InitializeComponent();
         }
         public string id,soyad,ad,telefon,dogum,Tc,bolum,mail,odaNo,veliadsoy,velitel,adres;
-        SqlBaglanti bgl = new SqlBaglanti(); 
+
+        
+        SqlBaglanti bgl = new SqlBaglanti();
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            SqlCommand emirsil = new SqlCommand("delete from Ogrenci where ogrid = @k1 ", bgl.baglanti());
+            emirsil.Parameters.AddWithValue("@k1", TxtOgrid.Text);
+            emirsil.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Kayit Silindi");
+
+
+
+
+            SqlCommand komutoda = new SqlCommand("update odalar set OdaAktif = OdaAktif - 1 where OdaNo = @oda", bgl.baglanti());
+            komutoda.Parameters.AddWithValue("@oda", CmbOdaNo. Text);
+            komutoda.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+        }
+
 
         private void BtnGuncelle_Click(object sender, EventArgs e)
         {

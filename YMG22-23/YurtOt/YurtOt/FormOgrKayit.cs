@@ -93,6 +93,13 @@ namespace YurtOt
                 MessageBox.Show("UYARI!!! Kayit basarili bir sekilde eklenememistir bilginize :(");
             }
 
+            SqlCommand emiroda = new SqlCommand("update Odalar set OdaAktif = OdaAktif + 1 where OdaNo = @c1", bgl.baglanti());
+            emiroda.Parameters.AddWithValue("@c1",CmbOdaNo.Text);
+            emiroda.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
+
+
         }
     }
 }
