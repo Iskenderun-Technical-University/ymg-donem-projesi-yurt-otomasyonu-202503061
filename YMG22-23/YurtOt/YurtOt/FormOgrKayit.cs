@@ -20,7 +20,7 @@ namespace YurtOt
 
         // DESKTOP-LJ30V5U\SQLEXPRESS
         // Data Source=DESKTOP-LJ30V5U\SQLEXPRESS;Initial Catalog=YurtKayit;Integrated Security=True
-        SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-LJ30V5U\\SQLEXPRESS;Initial Catalog=YurtKayit;Integrated Security=True");
+        SqlBaglanti bgl = new SqlBaglanti();
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -29,23 +29,22 @@ namespace YurtOt
         private void FormOgrKayit_Load(object sender, EventArgs e)
         {
             //combobaxa veri cekme
-            baglanti.Open();
-            SqlCommand komut = new SqlCommand("Select BolumAd From Bolumler", baglanti);
+           
+            SqlCommand komut = new SqlCommand("Select BolumAd From Bolumler", bgl.baglanti());
             SqlDataReader oku = komut.ExecuteReader();
             while(oku.Read())
             {
                 CmbBolum.Items.Add(oku[0].ToString());
             }
-            baglanti.Close();
+            bgl.baglanti().Close();
             //bos odalari goruntuleme 
-            baglanti.Open();
-            SqlCommand komut2 = new SqlCommand("Select Odano From Odalar where OdaKapasite != OdaAktif ", baglanti);
+            SqlCommand komut2 = new SqlCommand("Select Odano From Odalar where OdaKapasite != OdaAktif ", bgl.baglanti());
             SqlDataReader oku2 = komut2.ExecuteReader();
             while(oku2.Read())
             {
                 CmbOdaNo.Items.Add(oku2[0].ToString());
             }
-            baglanti.Close();
+            bgl.baglanti().Close();
             // öğrenci panle formu oluşturulması
         }
 
@@ -54,8 +53,7 @@ namespace YurtOt
             try
             {
                 // kaydet butonu komutlari
-                baglanti.Open();
-                SqlCommand komutkayit = new SqlCommand("insert into Ogrenci(OgrAd,OgrSoyad,OgrTC,OgrTelefon,OgrDogum,OgrBolum,OgrMail,OgrOdaNo,OgrVeliAdSoyad,OgrVeliTelefon,OgrVeliAdres) values (@ad,@soyad,@tc,@telefon,@dogum,@bolum,@mail,@no,@veliadsoyad,@velitelefon,@veliadres)", baglanti);
+                SqlCommand komutkayit = new SqlCommand("insert into Ogrenci(OgrAd,OgrSoyad,OgrTC,OgrTelefon,OgrDogum,OgrBolum,OgrMail,OgrOdaNo,OgrVeliAdSoyad,OgrVeliTelefon,OgrVeliAdres) values (@ad,@soyad,@tc,@telefon,@dogum,@bolum,@mail,@no,@veliadsoyad,@velitelefon,@veliadres)", bgl.baglanti());
                 komutkayit.Parameters.AddWithValue("@ad", TxtOgrAd.Text);
                 komutkayit.Parameters.AddWithValue("@soyad", TxtOgrSoyad.Text);
                 komutkayit.Parameters.AddWithValue("@tc", MskTC.Text);
@@ -68,7 +66,7 @@ namespace YurtOt
                 komutkayit.Parameters.AddWithValue("@velitelefon", MskVeliTelefon.Text);
                 komutkayit.Parameters.AddWithValue("@veliadres", RchAdres.Text);
                 komutkayit.ExecuteNonQuery();
-                baglanti.Close();
+                bgl.baglanti().Close();
                 MessageBox.Show("Kayit basarili bir sekilde eklenmistir bilginize :)");
             }
             catch (Exception)

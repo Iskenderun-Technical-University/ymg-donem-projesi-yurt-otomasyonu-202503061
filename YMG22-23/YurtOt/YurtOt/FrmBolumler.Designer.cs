@@ -44,6 +44,7 @@ namespace YurtOt
             this.PcbBolumSil = new System.Windows.Forms.PictureBox();
             this.PcbEdit = new System.Windows.Forms.PictureBox();
             this.bolumlerTableAdapter = new YurtOt.YurtKayitDataSetTableAdapters.BolumlerTableAdapter();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.PcbBolumEkle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bolumlerBindingSource)).BeginInit();
@@ -61,6 +62,7 @@ namespace YurtOt
             this.PcbBolumEkle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PcbBolumEkle.TabIndex = 0;
             this.PcbBolumEkle.TabStop = false;
+            this.toolTip1.SetToolTip(this.PcbBolumEkle, "Bölüm Ekle");
             this.PcbBolumEkle.Click += new System.EventHandler(this.PcbBolumEkle_Click);
             // 
             // label1
@@ -75,6 +77,7 @@ namespace YurtOt
             // 
             // TxtBolumid
             // 
+            this.TxtBolumid.Enabled = false;
             this.TxtBolumid.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.TxtBolumid.Location = new System.Drawing.Point(218, 70);
             this.TxtBolumid.Name = "TxtBolumid";
@@ -111,6 +114,7 @@ namespace YurtOt
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(611, 256);
             this.dataGridView1.TabIndex = 7;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // bolumidDataGridViewTextBoxColumn
             // 
@@ -145,6 +149,8 @@ namespace YurtOt
             this.PcbBolumSil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PcbBolumSil.TabIndex = 8;
             this.PcbBolumSil.TabStop = false;
+            this.toolTip1.SetToolTip(this.PcbBolumSil, "Bölüm Sil");
+            this.PcbBolumSil.Click += new System.EventHandler(this.PcbBolumSil_Click);
             // 
             // PcbEdit
             // 
@@ -155,6 +161,8 @@ namespace YurtOt
             this.PcbEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PcbEdit.TabIndex = 9;
             this.PcbEdit.TabStop = false;
+            this.toolTip1.SetToolTip(this.PcbEdit, "Bölüm Düzenle");
+            this.PcbEdit.Click += new System.EventHandler(this.PcbEdit_Click);
             // 
             // bolumlerTableAdapter
             // 
@@ -205,5 +213,6 @@ namespace YurtOt
         private YurtKayitDataSetTableAdapters.BolumlerTableAdapter bolumlerTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn bolumidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bolumAdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

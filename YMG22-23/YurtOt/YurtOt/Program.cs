@@ -16,7 +16,7 @@ namespace YurtOt
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmBolumler());
+            Application.Run(new AnaForm());
         }
     }
 }

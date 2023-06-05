@@ -29,6 +29,7 @@ namespace YurtOt
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormOgrKayit));
             this.label1 = new System.Windows.Forms.Label();
             this.TxtOgrAd = new System.Windows.Forms.TextBox();
             this.TxtOgrSoyad = new System.Windows.Forms.TextBox();
@@ -302,6 +303,7 @@ namespace YurtOt
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtOgrAd);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormOgrKayit";
             this.Text = "Öğrenci Kayıt";
             this.Load += new System.EventHandler(this.FormOgrKayit_Load);
