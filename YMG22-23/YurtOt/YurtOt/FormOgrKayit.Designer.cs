@@ -53,6 +53,7 @@ namespace YurtOt
             this.RchAdres = new System.Windows.Forms.RichTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.BtnKaydet = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -275,11 +276,22 @@ namespace YurtOt
             this.BtnKaydet.UseVisualStyleBackColor = true;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(87, 468);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "label12";
+            this.label12.Visible = false;
+            // 
             // FormOgrKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1051, 713);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.BtnKaydet);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.RchAdres);
@@ -337,6 +349,7 @@ namespace YurtOt
         private System.Windows.Forms.RichTextBox RchAdres;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button BtnKaydet;
+        private System.Windows.Forms.Label label12;
     }
 }
 

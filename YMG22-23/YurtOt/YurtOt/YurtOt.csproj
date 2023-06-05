@@ -52,6 +52,12 @@
     <Compile Include="AnaForm.Designer.cs">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormOdeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOdeme.Designer.cs">
+      <DependentUpon>FormOdeme.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOgrKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,18 @@
     </Compile>
     <Compile Include="FrmBolumler.Designer.cs">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciDuzunle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciDuzunle.Designer.cs">
+      <DependentUpon>OgrenciDuzunle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OgrenciListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OgrenciListe.Designer.cs">
+      <DependentUpon>OgrenciListe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,14 +95,33 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtKayitDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="YurtKayitDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YurtKayitDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet3.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOdeme.resx">
+      <DependentUpon>FormOdeme.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOgrKayit.resx">
       <DependentUpon>FormOgrKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciDuzunle.resx">
+      <DependentUpon>OgrenciDuzunle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OgrenciListe.resx">
+      <DependentUpon>OgrenciListe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,6 +162,28 @@
     </None>
     <None Include="YurtKayitDataSet1.xss">
       <DependentUpon>YurtKayitDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet2.xsc">
+      <DependentUpon>YurtKayitDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet2.xss">
+      <DependentUpon>YurtKayitDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet3.xsc">
+      <DependentUpon>YurtKayitDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet3.xss">
+      <DependentUpon>YurtKayitDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
