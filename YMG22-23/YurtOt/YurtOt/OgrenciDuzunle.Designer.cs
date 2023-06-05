@@ -309,6 +309,7 @@ namespace YurtOt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 673);
             this.Controls.Add(this.TxtOgrid);
             this.Controls.Add(this.label12);
@@ -336,6 +337,8 @@ namespace YurtOt
             this.Controls.Add(this.TxtOgrAd);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "OgrenciDuzunle";
             this.Text = "Ögrenci Düzünle";
             this.Load += new System.EventHandler(this.OgrenciDuzunle_Load);
