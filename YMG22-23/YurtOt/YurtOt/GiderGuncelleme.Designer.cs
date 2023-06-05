@@ -29,7 +29,7 @@ namespace YurtOt
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnKaydet = new System.Windows.Forms.Button();
+            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.TxtDiger = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.TxtPersonel = new System.Windows.Forms.TextBox();
@@ -48,15 +48,16 @@ namespace YurtOt
             this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // BtnKaydet
+            // BtnGuncelle
             // 
-            this.BtnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnKaydet.Location = new System.Drawing.Point(236, 326);
-            this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(116, 35);
-            this.BtnKaydet.TabIndex = 31;
-            this.BtnKaydet.Text = "Guncelle";
-            this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGuncelle.Location = new System.Drawing.Point(236, 326);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(116, 35);
+            this.BtnGuncelle.TabIndex = 31;
+            this.BtnGuncelle.Text = "Guncelle";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // TxtDiger
             // 
@@ -210,7 +211,7 @@ namespace YurtOt
             this.ClientSize = new System.Drawing.Size(585, 526);
             this.Controls.Add(this.TxtGiderid);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.BtnKaydet);
+            this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.TxtDiger);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.TxtPersonel);
@@ -226,7 +227,7 @@ namespace YurtOt
             this.Controls.Add(this.TxtElektirik);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GiderGuncelleme";
@@ -239,7 +240,7 @@ namespace YurtOt
 
         #endregion
 
-        private System.Windows.Forms.Button BtnKaydet;
+        private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.TextBox TxtDiger;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox TxtPersonel;

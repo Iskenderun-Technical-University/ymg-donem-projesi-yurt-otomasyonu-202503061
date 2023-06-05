@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminGiris.Designer.cs">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +76,12 @@
     </Compile>
     <Compile Include="FrmBolumler.Designer.cs">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gelirİstatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gelirİstatistik.Designer.cs">
+      <DependentUpon>Gelirİstatistik.cs</DependentUpon>
     </Compile>
     <Compile Include="GiderFormu.cs">
       <SubType>Form</SubType>
@@ -103,6 +116,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlBaglanti.cs" />
+    <Compile Include="YoneticiPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YoneticiPanel.Designer.cs">
+      <DependentUpon>YoneticiPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="YurtKayitDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -128,6 +147,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtKayitDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="YurtKayitDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet5.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminGiris.resx">
+      <DependentUpon>AdminGiris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AnaForm.resx">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBolumler.resx">
       <DependentUpon>FrmBolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gelirİstatistik.resx">
+      <DependentUpon>Gelirİstatistik.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiderFormu.resx">
       <DependentUpon>GiderFormu.cs</DependentUpon>
@@ -164,6 +194,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="YoneticiPanel.resx">
+      <DependentUpon>YoneticiPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -227,6 +260,17 @@
     </None>
     <None Include="YurtKayitDataSet4.xss">
       <DependentUpon>YurtKayitDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet5.xsc">
+      <DependentUpon>YurtKayitDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet5.xss">
+      <DependentUpon>YurtKayitDataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -63,6 +63,13 @@ namespace YurtOt
             MessageBox.Show("Borc Odendi");
             this.borclarTableAdapter.Fill(this.yurtKayitDataSet2.Borclar);
 
+            //Kasa tablosuna ekleme yapma
+            SqlCommand emir = new SqlCommand("insert into Kasa (OdemeAy,OdemeMiktar) values (@c1,@c2)", bgl.baglanti());
+            emir.Parameters.AddWithValue("@c1", TxtOdenenAy.Text);
+            emir.Parameters.AddWithValue("@c2", TxtOdenen.Text);
+            emir.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
 
 
         }
