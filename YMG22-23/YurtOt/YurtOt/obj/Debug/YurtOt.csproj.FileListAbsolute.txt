@@ -19,3 +19,4 @@ C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtO
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.Gelirİstatistik.resources
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.AdminGiris.resources
 C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.YoneticiPanel.resources
+C:\Users\ZEGO\Desktop\ymg-donem-projesi-yurt-otomasyonu-202503061\YMG22-23\YurtOt\YurtOt\obj\Debug\YurtOt.PersonelFormu.resources

@@ -58,5 +58,22 @@ namespace YurtOt
             MessageBox.Show("Silme İşlemi başarılı gerçekleşti...");
             this.adminTableAdapter.Fill(this.yurtKayitDataSet5.Admin);
         }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand emir = new SqlCommand("update Admin set YoneticiAd=@c1,YoneticiSifre=@c2 where Yoneticiid=@c3", bgl.baglanti());
+            emir.Parameters.AddWithValue("@c1", TxtKullaniciad.Text);
+            emir.Parameters.AddWithValue("@c2", TxtSifre.Text);
+            emir.Parameters.AddWithValue("@c3", TxtYoneticiid.Text);
+            emir.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Guncelleme İşlemi başarılı gerçekleşti...");
+            this.adminTableAdapter.Fill(this.yurtKayitDataSet5.Admin);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

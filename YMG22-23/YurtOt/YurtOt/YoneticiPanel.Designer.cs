@@ -40,15 +40,15 @@ namespace YurtOt
             this.BtnSil = new System.Windows.Forms.Button();
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.yurtKayitDataSet5 = new YurtOt.YurtKayitDataSet5();
-            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.adminTableAdapter = new YurtOt.YurtKayitDataSet5TableAdapters.AdminTableAdapter();
             this.yoneticiidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yoneticiAdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yoneticiSifreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.yurtKayitDataSet5 = new YurtOt.YurtKayitDataSet5();
+            this.adminTableAdapter = new YurtOt.YurtKayitDataSet5TableAdapters.AdminTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtYoneticiid
@@ -145,6 +145,7 @@ namespace YurtOt
             this.BtnGuncelle.TabIndex = 10;
             this.BtnGuncelle.Text = "Guncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // dataGridView1
             // 
@@ -160,20 +161,7 @@ namespace YurtOt
             this.dataGridView1.Size = new System.Drawing.Size(341, 236);
             this.dataGridView1.TabIndex = 11;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // yurtKayitDataSet5
-            // 
-            this.yurtKayitDataSet5.DataSetName = "YurtKayitDataSet5";
-            this.yurtKayitDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // adminBindingSource
-            // 
-            this.adminBindingSource.DataMember = "Admin";
-            this.adminBindingSource.DataSource = this.yurtKayitDataSet5;
-            // 
-            // adminTableAdapter
-            // 
-            this.adminTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // yoneticiidDataGridViewTextBoxColumn
             // 
@@ -193,6 +181,20 @@ namespace YurtOt
             this.yoneticiSifreDataGridViewTextBoxColumn.DataPropertyName = "YoneticiSifre";
             this.yoneticiSifreDataGridViewTextBoxColumn.HeaderText = "YoneticiSifre";
             this.yoneticiSifreDataGridViewTextBoxColumn.Name = "yoneticiSifreDataGridViewTextBoxColumn";
+            // 
+            // adminBindingSource
+            // 
+            this.adminBindingSource.DataMember = "Admin";
+            this.adminBindingSource.DataSource = this.yurtKayitDataSet5;
+            // 
+            // yurtKayitDataSet5
+            // 
+            this.yurtKayitDataSet5.DataSetName = "YurtKayitDataSet5";
+            this.yurtKayitDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // adminTableAdapter
+            // 
+            this.adminTableAdapter.ClearBeforeFill = true;
             // 
             // YoneticiPanel
             // 
@@ -218,8 +220,8 @@ namespace YurtOt
             this.Text = "Yonetici Panel";
             this.Load += new System.EventHandler(this.YoneticiPanel_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.yurtKayitDataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

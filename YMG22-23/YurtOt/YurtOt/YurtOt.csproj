@@ -113,6 +113,12 @@
     <Compile Include="OgrenciListe.Designer.cs">
       <DependentUpon>OgrenciListe.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonelFormu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonelFormu.Designer.cs">
+      <DependentUpon>PersonelFormu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlBaglanti.cs" />
@@ -152,6 +158,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YurtKayitDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="YurtKayitDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YurtKayitDataSet6.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminGiris.resx">
       <DependentUpon>AdminGiris.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OgrenciListe.resx">
       <DependentUpon>OgrenciListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelFormu.resx">
+      <DependentUpon>PersonelFormu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -271,6 +285,17 @@
     </None>
     <None Include="YurtKayitDataSet5.xss">
       <DependentUpon>YurtKayitDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet6.xsc">
+      <DependentUpon>YurtKayitDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="YurtKayitDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YurtKayitDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YurtKayitDataSet6.xss">
+      <DependentUpon>YurtKayitDataSet6.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

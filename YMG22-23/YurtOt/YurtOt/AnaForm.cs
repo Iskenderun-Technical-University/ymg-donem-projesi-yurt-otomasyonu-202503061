@@ -33,5 +33,15 @@ namespace YurtOt
             label1.Text = DateTime.Now.ToLongDateString();
             label2.Text = DateTime.Now.ToLongTimeString();
         }
+
+        private void hesapMakinesiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("Calc.exe");
+        }
+
+        private void paintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("MsPaint.exe");
+        }
     }
 }

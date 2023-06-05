@@ -57,10 +57,6 @@ namespace YurtOt
             this.erişimKolaylığıToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hesapMakinesiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.radyolarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.radyo1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.radyo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.radyo3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkımızdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.çıkışToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
@@ -257,7 +253,6 @@ namespace YurtOt
             this.erişimKolaylığıToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hesapMakinesiToolStripMenuItem,
             this.paintToolStripMenuItem,
-            this.radyolarToolStripMenuItem,
             this.hakkımızdaToolStripMenuItem,
             this.çıkışToolStripMenuItem});
             this.erişimKolaylığıToolStripMenuItem.Name = "erişimKolaylığıToolStripMenuItem";
@@ -269,40 +264,14 @@ namespace YurtOt
             this.hesapMakinesiToolStripMenuItem.Name = "hesapMakinesiToolStripMenuItem";
             this.hesapMakinesiToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.hesapMakinesiToolStripMenuItem.Text = "Hesap Makinesi";
+            this.hesapMakinesiToolStripMenuItem.Click += new System.EventHandler(this.hesapMakinesiToolStripMenuItem_Click);
             // 
             // paintToolStripMenuItem
             // 
             this.paintToolStripMenuItem.Name = "paintToolStripMenuItem";
             this.paintToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.paintToolStripMenuItem.Text = "Paint";
-            // 
-            // radyolarToolStripMenuItem
-            // 
-            this.radyolarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.radyo1ToolStripMenuItem,
-            this.radyo2ToolStripMenuItem,
-            this.radyo3ToolStripMenuItem});
-            this.radyolarToolStripMenuItem.Name = "radyolarToolStripMenuItem";
-            this.radyolarToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.radyolarToolStripMenuItem.Text = "Radyolar";
-            // 
-            // radyo1ToolStripMenuItem
-            // 
-            this.radyo1ToolStripMenuItem.Name = "radyo1ToolStripMenuItem";
-            this.radyo1ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.radyo1ToolStripMenuItem.Text = "Radyo 1";
-            // 
-            // radyo2ToolStripMenuItem
-            // 
-            this.radyo2ToolStripMenuItem.Name = "radyo2ToolStripMenuItem";
-            this.radyo2ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.radyo2ToolStripMenuItem.Text = "Radyo 2";
-            // 
-            // radyo3ToolStripMenuItem
-            // 
-            this.radyo3ToolStripMenuItem.Name = "radyo3ToolStripMenuItem";
-            this.radyo3ToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
-            this.radyo3ToolStripMenuItem.Text = "Radyo 3";
+            this.paintToolStripMenuItem.Click += new System.EventHandler(this.paintToolStripMenuItem_Click);
             // 
             // hakkımızdaToolStripMenuItem
             // 
@@ -449,10 +418,6 @@ namespace YurtOt
         private System.Windows.Forms.ToolStripMenuItem erişimKolaylığıToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hesapMakinesiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paintToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem radyolarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem radyo1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem radyo2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem radyo3ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hakkımızdaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem;
     
